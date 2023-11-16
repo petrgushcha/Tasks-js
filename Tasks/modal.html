@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+   <style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn{
+    color: #fff;
+    background-color: #8E8E8E;
+    padding: 17px;
+    }
+
+    .btn:hover{
+        background-color: #2B2B2B;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(00, 00, 00, .2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+    }
+
+    .modal-container{
+        background-color: #2B2B2B;
+        min-width: 500px;
+        min-height: 20px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   </style>
+</head>
+<body>
+   <div class="container">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Quo minima sit obcaecati eos assumenda. Ipsam unde assumenda nihil,
+            illum eius saepe possimus, iure ex voluptatum inventore vero sunt sit minima.
+        </p>
+        <batten class="btn" id="openOverlay">Открыть</batten>
+   </div>
+   <script src="./modal.js"></script>
+</body>
+</html>
